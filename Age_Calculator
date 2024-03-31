@@ -4,35 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: cursive;
+            background-color: #1A1A1A;
+            color: #FFFFFF;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
             max-width: 400px;
             margin: 50px auto;
             padding: 20px;
-            border: 2px solid white;
+            border: 2px solid #FFFFFF;
+            background-color: #282828;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #FFFFFF;
         }
 
         input[type="number"], button {
             display: block;
-            margin-bottom: 10px;
+            width: calc(100% - 20px);
+            margin: 10px auto;
+            padding: 10px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+            box-sizing: border-box;
+        }
+
+        input[type="number"]::placeholder {
+            color: #8C8C8C;
+            opacity: 0.7;
         }
 
         button {
-            background-color: white;
-            color: black;
-            border: none;
-            padding: 10px 20px;
+            background-color: #FF4500;
+            color: #FFFFFF;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
-            background-color: #ccc;
+            background-color: #FF5733;
+        }
+
+        #result {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
